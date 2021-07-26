@@ -34,3 +34,9 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- script: |
+    pwd
+    git clone https://github.com/Boban-Mitevski/python-sample-vscode-flask-tutorial.git
+    ls -ltr
+  displayName: cloning locally
